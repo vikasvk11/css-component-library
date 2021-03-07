@@ -1,8 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
     color: grey;
 }
 
 .avatar {
-    border: 5px solid black;
+    border: 5px solid rgb(255, 133, 133);
     display: inline-block;
+    border-radius: 50%;
+}
+
+.primary-alert {
+    border: 1px solid rgb(70, 141, 163, 0.5);
+    background-color: rgb(198, 225, 233);
+    color: rgb(46, 98, 116);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.warn-alert {
+    border: 1px solid rgb(163, 70, 70, 0.5);
+    background-color: rgb(233, 198, 198);
+    color: rgb(116, 46, 46);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.success-alert {
+    border: 1px solid rgba(78, 163, 70, 0.5);
+    background-color: rgb(199, 233, 198);
+    color: rgb(48, 116, 46);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.secondary-alert {
+    border: 1px solid rgb(160, 160, 160, 0.5);
+    background-color: rgb(233, 233, 233);
+    color: rgb(99, 99, 99);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.badge-icon {
+    display: inline-block;
+    position: relative;
+}
+
+.badge-icon > span {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: -5px;
+    top: -8px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 1px 2.5px;
+}
+
+.badge-avatar {
+    display: inline-block;
+    position: relative;
+}
+
+.badge-avatar > span {
+    background-color: rgb(4, 167, 4);
+    border: 5px solid white;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2%;
+    right: 20%;
+}
+
+.btn-primary {
+    background-color: rgb(97, 192, 230);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: rgb(73, 147, 177);
+}
+
+.btn-secondary {
+    background-color: rgb(199, 199, 199);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: rgb(87, 87, 87);
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.btn-icon {
+    background-color: rgb(91, 195, 255);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: rgb(87, 87, 87);
+    font-weight: 600;
+    color: white;
+}
+
+.btn-icon:hover {
+    background-color: rgb(70, 143, 185);
+}
+
+.btn-link {
+    text-decoration: none;
+    background-color: rgb(176, 91, 255);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    background-color: rgb(125, 65, 182);
+}
+
+.btn-float {
+    text-decoration: none;
+    background-color: rgb(189, 1, 1);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0.4rem 0.5rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.411);
+}
+
+.btn-float:hover {
+    background-color: rgb(151, 1, 1);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    border: 1px solid black;
+}
+
+.card > h2 {
+    margin: 0;
+    margin-top: 1rem;
 }
