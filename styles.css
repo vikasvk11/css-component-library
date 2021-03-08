@@ -159,14 +159,21 @@ h1 {
     background-color: rgb(151, 1, 1);
 }
 
-.card {
+.simple-card {
     display: flex;
     flex-direction: column;
     width: 15rem;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.318);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.281);
 }
 
-.card > h2 {
-    margin: 0;
+.simple-card > h2 {
+    margin: 0 0.8rem;
     margin-top: 1rem;
+}
+
+.simple-card > p {
+    margin: 1rem 0.8rem;
+    font-size: small;
 }
