@@ -164,8 +164,8 @@ h1 {
     flex-direction: column;
     width: 15rem;
     border: 1px solid rgba(0, 0, 0, 0.218);
-    border-radius: 1rem;
-    box-shadow: 2px 2px 25px 0px rgba(0, 0, 0, 0.181);
+    border-radius: 0.2rem;
+    box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.181);
 }
 
 .simple-card > h2 {
@@ -176,4 +176,35 @@ h1 {
 .simple-card > p {
     margin: 1rem 0.8rem;
     font-size: small;
+}
+
+.badge-card {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    border: 1px solid rgba(192, 49, 49, 0.218);
+    border-radius: 0.2rem;
+    box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.181);
+    position: relative;
+}
+
+.badge-card > h2 {
+    background-color: rgba(255, 101, 101, 0.123);
+    padding: 1rem 0 0.8rem 0.8rem;
+    margin: 0;
+}
+
+.badge-card > p {
+    margin: 1rem 0.8rem;
+    font-size: small;
+}
+
+.badge-card > span {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 0.8rem;
+    background-color: rgb(218, 42, 42);
+    color: white;
+    padding: 0 0.7rem;
 }
