@@ -153,6 +153,9 @@ h1 {
     border: none;
     padding: 0.4rem 0.5rem;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.411);
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
 }
 
 .btn-float:hover {
@@ -166,6 +169,7 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.218);
     border-radius: 0.2rem;
     box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.181);
+    position: relative;
 }
 
 .simple-card > h2 {
@@ -178,13 +182,18 @@ h1 {
     font-size: small;
 }
 
+.simple-card > span {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
 .badge-card {
     display: flex;
     flex-direction: column;
     width: 15rem;
     border: 1px solid rgba(192, 49, 49, 0.218);
     border-radius: 0.2rem;
-    box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.181);
     position: relative;
 }
 
@@ -207,4 +216,58 @@ h1 {
     background-color: rgb(218, 42, 42);
     color: white;
     padding: 0 0.7rem;
+}
+
+.badge-card:hover {
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.181);
+}
+
+.horizontal-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgba(112, 112, 112, 0.218);
+    border-radius: 0.2rem;
+    box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.181);
+    position: relative;
+}
+
+.horizontal-card > h2 {
+    background-color: rgba(202, 202, 202, 0.123);
+    padding: 1rem 0 0.8rem 0.8rem;
+    margin: 0;
+    text-align: center;
+}
+
+.horizontal-card > p {
+    margin: 1rem 0.8rem;
+    font-size: small;
+}
+
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    border: 1px solid rgba(136, 136, 136, 0.218);
+    border-radius: 0.5rem;
+    position: relative;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.181);
+}
+
+.image-card > img {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.image-card > h2 {
+    text-align: center;
+    padding: 1rem 0 0rem 0rem;
+    margin: 0;
+}
+
+.image-card > p {
+    margin: 1rem 0.8rem;
+    font-size: small;
+    text-align: center;
 }
