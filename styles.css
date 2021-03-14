@@ -9,6 +9,11 @@
     padding: 0;
 }
 
+body {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
 h1 {
     color: grey;
 }
@@ -392,14 +397,13 @@ h1 {
 .nav-bar {
     display: flex;
     align-items: center;
-    background-color: rgb(230, 230, 230);
-
+    background-color: rgb(238, 238, 238);
     padding: 1rem 0;
 }
 
 .nav-header {
     flex: 1 1;
-    color: rgb(47, 81, 87);
+    color: rgba(47, 81, 87, 0.788);
     padding-left: 5rem;
 }
 
@@ -419,4 +423,41 @@ h1 {
 .nav-list > li:hover {
     color: rgba(44, 78, 90, 0.986);
     font-weight: 500;
+}
+
+.modal {
+    border: 1px solid rgb(204, 204, 204);
+    width: 25rem;
+    height: 11rem;
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 10px 0px rgb(212, 212, 212);
+}
+
+.modal > h1 > span {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.7rem;
+} 
+
+.modal > h1 {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    border-bottom: 1px solid rgb(181, 202, 204);
+}
+
+.modal > p {
+    height: 5rem;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgb(181, 202, 204);
+}
+
+.modal > button {
+    position: absolute;
+    height: 2rem;
+    width: 20%;
+    right: 0.5rem;
+    bottom: 0.5rem;
 }
