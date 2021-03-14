@@ -5,6 +5,8 @@
 *{
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -311,6 +313,10 @@ h1 {
     background-color: blue;
 }
 
+.form-header {
+    margin-bottom: 1rem;
+}
+
 .input-container {
     margin-bottom: 1rem;
     width: 100%;
@@ -381,4 +387,36 @@ h1 {
 .stacked-list-container > li > span {
     width: 1rem;
     align-self: center;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+
+    padding: 1rem 0;
+}
+
+.nav-header {
+    flex: 1 1;
+    color: rgb(47, 81, 87);
+    padding-left: 5rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    flex: 1 1;
+    justify-content: space-around;
+}
+
+.nav-list > li {
+    color: rgba(76, 128, 145, 0.795);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-list > li:hover {
+    color: rgba(44, 78, 90, 0.986);
+    font-weight: 500;
 }
