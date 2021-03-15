@@ -73,7 +73,21 @@ h1 {
     color: grey;
 }
 
-.avatar {
+.avatar-sm {
+    border: 2.5px solid rgb(255, 133, 133);
+    display: inline-block;
+    border-radius: 50%;
+    width: 3.5rem;
+}
+
+.avatar-md {
+    border: 3px solid rgb(255, 133, 133);
+    display: inline-block;
+    border-radius: 50%;
+    width: 6rem;
+}
+
+.avatar-lg {
     border: 5px solid rgb(255, 133, 133);
     display: inline-block;
     border-radius: 50%;
@@ -128,12 +142,44 @@ h1 {
     padding: 1px 2.5px;
 }
 
-.badge-avatar {
+.badge-avatar-sm {
     display: inline-block;
     position: relative;
 }
 
-.badge-avatar > span {
+.badge-avatar-sm > span {
+    background-color: rgb(4, 167, 4);
+    border: 1.5px solid white;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2%;
+    right: 20%;
+}
+
+.badge-avatar-md {
+    display: inline-block;
+    position: relative;
+}
+
+.badge-avatar-md > span {
+    background-color: rgb(4, 167, 4);
+    border: 2px solid white;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2%;
+    right: 20%;
+}
+
+.badge-avatar-lg {
+    display: inline-block;
+    position: relative;
+}
+
+.badge-avatar-lg > span {
     background-color: rgb(4, 167, 4);
     border: 3px solid white;
     width: 1.5rem;
