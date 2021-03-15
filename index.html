@@ -6,15 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
-
+    <link rel="shortcut icon" type="image/jpg" href="./alpha_favi.png"/>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script defer src="./index.js"></script>
 </head>
 
 <body>
-    <div class="grid-main">
-        <h1 class="grid-main-header">alpha CSS</h1>
+    <div class="grid-main-container">
+        <div class="grid-main-header main-nav-bar">
+            <h1 class="main-nav-header"><img style="width: 2rem;" alt="logo" src="alpha_logo.png">alpha CSS</h1>
+            <ul class="main-nav-list">
+                <li>Home</li>
+                <li>Documentation</li>
+                <li>About</li>
+            </ul>
+        </div>
         <ul id="mainlink" class="grid-main-1">
             <li><a class="links" href="#avatar-a">Avatar</a></li>
             <li><a class="links" href="#alerts-a">Alerts</a></li>
@@ -32,7 +39,7 @@
         </ul>
         <div class="grid-main-2">
 
-            <h2 class="component-headers" id="avatar-a">Avatar</h2>
+            <h2 class="component-headers" style="margin-top: 0;" id="avatar-a">Avatar</h2>
 
             <div class="badge-avatar-sm">
                 <img class="avatar-sm" src="./Profile_large.png">
@@ -69,7 +76,7 @@
 
             <h2 class="component-headers" id="badges-a">Badges</h2>
 
-            <h3>Badges on Icons</h3>
+            <h3 class="component-sub-headers">Badges on Icons</h3>
             <br>
             <div class="badge-icon">
                 <img src="carticon.png">
@@ -79,10 +86,13 @@
             <h2 class="component-headers" id="buttons-a">Buttons</h2>
 
             <button class="btn-primary">Primary</button>
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
             <button class="btn-secondary">Secondary</button>
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
             <button class="btn-icon"><i class="material-icons">home</i></button>
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
             <a class="btn-link" href="">Click Here</a>
-            <button class="btn-float"><i class="material-icons">zoom_in</i></button>
+            <button class="btn-float"><i class="material-icons">zoom_in</i><span class="tooltip">float btn</span></button>
 
             <h2 class="component-headers" id="cards-a">Cards</h2>
 
@@ -121,13 +131,15 @@
             </div>
 
             <h2 class="component-headers" id="images-a">Images</h2>
+            <h3 class="component-sub-headers">Responsive Image</h3>
+            <div>
+                <img class="responsive-img" src="./resp_img.jpg">
+            </div>
+
+            <h3 class="component-sub-headers">Rounded Image</h3>
 
             <div>
-                <img class="responsive-img" src="./avengers.jpg">
-            </div>
-            <br>
-            <div>
-                <img class="round-img" src="./A_Logo.jpg">
+                <img class="round-img" src="./sq_img.jpg">
             </div>
 
             <h2 class="component-headers" id="forms-a">Form Validation</h2>
@@ -153,7 +165,7 @@
 
             <h2 class="component-headers" id="lists-a">Lists</h2>
 
-            <h3>Spaced List</h3>
+            <h3 class="component-sub-headers">Spaced List</h3>
             <ul class="spaced-list-container">
                 <li>List Item 1</li>
                 <li>List Item 2</li>
@@ -162,7 +174,7 @@
                 <li>List Item 5</li>
             </ul>
 
-            <h3>Stacked List</h3>
+            <h3 class="component-sub-headers">Stacked List</h3>
 
             <ul class="stacked-list-container">
                 <li class="list-item">
@@ -201,7 +213,7 @@
 
             <h2 class="component-headers" id="nav-a">Navigation</h2>
 
-            <h3>Desktop Nav</h3>
+            <h3 class="component-sub-headers">Desktop Nav</h3>
 
             <nav class="nav-bar">
                 <h1 class="nav-header">Company Title</h1>
@@ -224,13 +236,13 @@
 
             <h2 class="component-headers" id="text-a">Text Utilities</h2>
 
-            <p class="hd-1">H1 equivalent</p>
-            <p class="hd-2">H2 equivalent</p>
-            <p class="hd-3">H3 equivalent</p>
-            <p class="hd-4">H4 equivalent</p>
-            <p class="hd-5">H5 equivalent</p>
-            <p class="center-text">This is a centered text</p>
-            <p class="grey-text">This is a grey text!</p>
+            <p class="hd-1 mg-1">H1 equivalent</p>
+            <p class="hd-2 mg-1">H2 equivalent</p>
+            <p class="hd-3 mg-1">H3 equivalent</p>
+            <p class="hd-4 mg-1">H4 equivalent</p>
+            <p class="hd-5 mg-1">H5 equivalent</p>
+            <p class="center-text mg-1">This is a centered text</p>
+            <p class="grey-text mg-1">This is a grey text!</p>
 
             <h2 class="component-headers" id="toast-a">Toast</h2>
 
@@ -240,6 +252,8 @@
             </div>
 
             <h2 class="component-headers" id="grid-a">Grid</h2>
+
+            <h3 class="component-sub-headers">2-Column grid</h3>
 
             <div class="grid-container-2">
                 <div class="grid-item-1-2">Grid Item 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -251,8 +265,7 @@
                     Laudantium error fuga quasi nostrum
                     incidunt et natus suscipit dolor vitae architecto.</div>
             </div>
-            <br>
-            <br>
+            <h3 class="component-sub-headers">3-Column grid</h3>
             <div class="grid-container-3">
                 <div class="grid-item-1-3">Grid Item 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                     magnam consequuntur iusto
