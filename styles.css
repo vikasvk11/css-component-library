@@ -178,8 +178,29 @@ h1 {
     background-color: #DA4167;
     border-radius: 50%;
     font-size: 12px;
-    padding: 1px 2.5px;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
 }
+
+.badge-icon-pr {
+    display: inline-block;
+    position: relative;
+}
+
+.badge-icon-pr > span {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 1rem;
+    height: 1rem;
+    background-color: #3CA1CD;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+}
+
 
 .badge-avatar-sm {
     display: inline-block;
@@ -755,7 +776,8 @@ h1 {
 
 .footer > h1 {
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .footer-img {
