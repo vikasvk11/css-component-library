@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
+    <title>alpha CSS</title>
     <link rel="shortcut icon" type="image/jpg" href="./alpha_favi.png" />
+    <link rel="stylesheet" href="./prism.css" >
     <link rel="stylesheet" href="./styles.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script defer src="./index.js"></script>
+    <script defer src="./prism.js"></script>
 </head>
 
 <body>
@@ -17,9 +20,9 @@
         <div class="grid-main-header main-nav-bar">
             <h1 class="main-nav-header"><img style="width: 2rem;" alt="logo" src="alpha_logo.png">alpha CSS</h1>
             <ul class="main-nav-list">
-                <li>Home</li>
-                <li>Documentation</li>
-                <li>About</li>
+                <li><a href="#avatar-a">Home</a></li>
+                <li><a target="_blank" href="./doc.html">Documentation</a></li>
+                <li><a href="#grid-a">About</a></li>
             </ul>
         </div>
         <ul id="mainlink" class="grid-main-1">
@@ -56,8 +59,33 @@
                 <span></span>
             </div>
 
+            
+
+            <div class="code-container">
+                <pre><span class="material-icons copy">
+                    content_copy
+                    </span>
+                    <code id="code" class="language-html">
+&lt;div class="badge-avatar-sm"&gt;
+    &lt;img class="avatar-sm" src="./Profile_large.png"&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="badge-avatar-md"&gt;
+    &lt;img class="avatar-md" src="./Profile_large.png"&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="badge-avatar-lg"&gt;
+    &lt;img class="avatar-lg" src="./Profile_large.png"&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;</code>
+                </pre>
+            </div>
+
             <h2 class="component-headers" id="alerts-a">Alerts</h2>
 
+            <div class="alert-container">
             <div class="primary-alert">
                 Hey! This is a primary alert.
             </div>
@@ -72,6 +100,7 @@
             <br>
             <div class="secondary-alert">
                 Hey! This is a secondary alert.
+            </div>
             </div>
 
             <h2 class="component-headers" id="badges-a">Badges</h2>
@@ -88,6 +117,10 @@
                     notifications
                 </i>
                 <span>5</span>
+            </div>
+
+            <div class="copy-toast">
+                <p>Copied!</p>
             </div>
 
             <h2 class="component-headers" id="buttons-a">Buttons</h2>

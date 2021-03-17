@@ -18,6 +18,74 @@ a {
     text-decoration: none;
   }
 
+.code-container {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.code-container > pre {
+    background-color: #eaeaea59;
+    display: inline-block;
+    margin: 0;
+    border-radius: 1rem;
+    padding: 0 1.5rem 0.7rem 1.5rem;
+}
+
+.copy {
+    position: absolute;
+    left: 32rem;
+    top: 1rem;
+    cursor: pointer;
+    color: #3CA1CD;
+    z-index: 1;
+}
+
+.copy:hover::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: #24272b13;
+    display: inline-block;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    position: absolute;
+    z-index: -1;
+}
+
+.copy:active::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.219);
+    display: inline-block;
+    border-radius: 50%;
+    left: -4px;
+    top: -4px;
+    position: absolute;
+}
+
+.copy-toast {
+    background-color: #3CA1CD;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 10px 0px rgb(212, 212, 212);
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.copy-toast-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.copy-toast > p {
+    color:rgb(255, 255, 255);
+}
+
 .component-headers {
     color: #233c55a2;
     margin: 1.5rem 0;
@@ -62,14 +130,15 @@ h1 {
     justify-content: space-around;
 }
 
-.main-nav-list>li {
-    color: #3281a3;
+.main-nav-list > li > a {
+    color: #3CA1CD;
     font-weight: 500;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
-.main-nav-list > li:hover {
-    color: #133644;
+.main-nav-list > li:hover > a {
+    color: #2f728f;
     font-weight: 500;
 }
 
@@ -131,6 +200,10 @@ h1 {
     display: inline-block;
     border-radius: 50%;
     width: 10rem;
+}
+
+.alert-container {
+    width: 70%;
 }
 
 .primary-alert {
