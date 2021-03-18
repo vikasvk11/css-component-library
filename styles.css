@@ -444,6 +444,40 @@ h1 {
     border-color: #555 transparent transparent transparent;
   }
 
+.btn-primary-outline {
+    background-color: transparent;
+    border: 1px solid #3CA1CD;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #3CA1CD;
+    font-weight: 600;
+}
+
+.btn-primary-outline:hover {
+    background-color: #3ca2cd9d;
+    color: white;
+}
+
+.btn-secondary-outline {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #4a525ad0;
+    font-weight: 600;
+}
+
+.btn-secondary-outline:hover {
+    background-color: #c4c4c4;
+    color: white;
+}
+
 .simple-card {
     display: flex;
     flex-direction: column;
