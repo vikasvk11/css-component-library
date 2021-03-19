@@ -81,6 +81,7 @@ a {
     left: 50%;
     visibility: hidden;
     opacity: 0;
+    z-index: 5;
 }
 
 .copy-toast-visible {
