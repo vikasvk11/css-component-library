@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alpha CSS</title>
     <link rel="shortcut icon" type="image/jpg" href="./alpha_favi.png" />
-    <link rel="stylesheet" href="./prism.css" >
+    <link rel="stylesheet" href="./prism.css">
     <link rel="stylesheet" href="./styles.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script defer src="./index.js"></script>
+    <script defer src="./alphaCSS.js"></script>
     <script defer src="./prism.js"></script>
 </head>
 
@@ -22,7 +23,7 @@
             <ul class="main-nav-list">
                 <li><a href="#avatar-a">Home</a></li>
                 <li><a target="_blank" href="./doc.html">Documentation</a></li>
-                <li><a href="#grid-a">About</a></li>
+                <li><a href="#footer">About</a></li>
             </ul>
         </div>
         <ul id="mainlink" class="grid-main-1">
@@ -59,7 +60,7 @@
                 <span></span>
             </div>
 
-            
+
 
             <div class="code-container">
                 <pre><span class="material-icons copy avatar">
@@ -67,17 +68,17 @@
                     </span>
                     <code  class="language-html avatar" id="code">
 &lt;div class="badge-avatar-sm"&gt;
-    &lt;img class="avatar-sm" src="./avatar.png"&gt;
+    &lt;img class="avatar-sm" src="..."&gt;
     &lt;span&gt;&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class="badge-avatar-md"&gt;
-    &lt;img class="avatar-md" src="./avatar.png"&gt;
+    &lt;img class="avatar-md" src="..."&gt;
     &lt;span&gt;&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class="badge-avatar-lg"&gt;
-    &lt;img class="avatar-lg" src="./avatar.png"&gt;
+    &lt;img class="avatar-lg" src="..."&gt;
     &lt;span&gt;&lt;/span&gt;
 &lt;/div&gt;</code>
                 </pre>
@@ -87,21 +88,21 @@
             <h2 class="component-headers" id="alerts-a">Alerts</h2>
 
             <div class="alert-container">
-            <div class="primary-alert">
-                Hey! This is a primary alert.
-            </div>
-            <br>
-            <div class="warn-alert">
-                Hey! This is a danger alert.
-            </div>
-            <br>
-            <div class="success-alert">
-                Hey! This is a success alert.
-            </div>
-            <br>
-            <div class="secondary-alert">
-                Hey! This is a secondary alert.
-            </div>
+                <div class="primary-alert">
+                    Hey! This is a primary alert.
+                </div>
+                <br>
+                <div class="warn-alert">
+                    Hey! This is a danger alert.
+                </div>
+                <br>
+                <div class="success-alert">
+                    Hey! This is a success alert.
+                </div>
+                <br>
+                <div class="secondary-alert">
+                    Hey! This is a secondary alert.
+                </div>
             </div>
 
             <div class="code-container">
@@ -209,38 +210,59 @@
 
             <h2 class="component-headers" id="cards-a">Cards</h2>
 
-            <div class="simple-card">
-                <h2>Card Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim. Nunc
-                    a
-                    egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.</p>
-                <span>X</span>
-            </div>
-            <br>
-            <div class="badge-card">
-                <h2>Card Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim. Nunc
-                    a
-                    egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.</p>
-                <span>New</span>
-            </div>
-            <br>
-            <div class="horizontal-card">
-                <h2>Card Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim. Nunc
-                    a
-                    egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.Lorem
-                    ipsum
-                    dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim. Nunc a
-                    egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.</p>
-            </div>
-            <br>
-            <div class="image-card">
-                <img src="./download.png">
-                <h2>Card Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim. Nunc
-                    a
-                    egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.</p>
+            <div class="card-container">
+                <div class="simple-card">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc
+                        a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.
+                    </p>
+                    <span>X</span>
+                </div>
+                <br>
+                <div class="badge-card">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc
+                        a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.
+                    </p>
+                    <span>New</span>
+                </div>
+                <br>
+                <div class="horizontal-card">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc
+                        a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum
+                        ut.Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim. Nunc a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.
+                    </p>
+                </div>
+                <br>
+                <div class="image-card">
+                    <img src="./download.png">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus a purus aliquet dignissim.
+                        Nunc
+                        a
+                        egestas nibh. Donec ut auctor odio. Etiam auctor nisi odio, vitae vulputate neque bibendum ut.
+                    </p>
+                </div>
+                <br>
+                <div class="product-card">
+                    <img src="./product_img.jpg">
+                    <p class="card-title">Rolleiflex</p>
+                    <p class="product-desc">Antique Camera</p>
+                    <p class="product-rating">4.9 <span class="material-icons">grade</span></p>
+                    <p class="product-price">&#8377;255 <del>&#8377;999</del> <span>75%off</span></p>
+                    <span class="product-badge">Very Old</span>
+                    <span class="wishlist-badge material-icons">favorite</span>
+                </div>
             </div>
 
             <div class="code-container">
@@ -266,9 +288,23 @@
 &lt;/div&gt;
 
 &lt;div class="image-card"&gt;
-    &lt;img src="./download.png"&gt;
+    &lt;img src="..."&gt;
     &lt;h2&gt;Card Title&lt;/h2&gt;
     &lt;p&gt;Some text....&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="product-card"&gt;
+    &lt;img src="..."&gt;
+    &lt;p class="card-title"&gt;Rolleiflex&lt;/p&gt;
+    &lt;p class="product-desc"&gt;Camera&lt;/p&gt;
+    &lt;p class="product-rating"&gt;4.9 
+        &lt;span class="material-icons"&gt;grade&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p class="product-price"&gt;&#8377;255 
+        &lt;del&gt;&#8377;999&lt;/del&gt; &lt;span&gt;75%off&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;span class="product-badge"&gt;Very Old&lt;/span&gt;
+    &lt;span class="wishlist-badge material-icons"&gt;favorite&lt;/span&gt;
 &lt;/div&gt;</code>
                 </pre>
             </div>
@@ -292,11 +328,11 @@
                     </span>
                     <code id="code" class="language-html img">
 &lt;div&gt;
-    &lt;img class="responsive-img" src="./resp_img.jpg"&gt;
+    &lt;img class="responsive-img" src="..."&gt;
 &lt;/div&gt;
 
 &lt;div&gt;
-    &lt;img class="round-img" src="./sq_img.jpg"&gt;
+    &lt;img class="round-img" src="..."&gt;
 &lt;/div&gt;</code>
                 </pre>
             </div>
@@ -436,7 +472,7 @@
     &lt;/li&gt;
 &lt;/ul&gt;</code>
                 </pre>
-                </div>
+            </div>
 
             <h2 class="component-headers" id="nav-a">Navigation</h2>
 
@@ -469,7 +505,7 @@
     &lt;/ul&gt;
 &lt;/nav&gt;</code>
 </pre>
-</div>
+            </div>
 
             <h2 class="component-headers" id="modal-a">Modal</h2>
 
@@ -496,7 +532,7 @@
     &lt;/div&gt;
 &lt;/div&gt;</code>
 </pre>
-</div>
+            </div>
 
             <h2 class="component-headers" id="text-a">Text Utilities</h2>
 
@@ -588,7 +624,7 @@
                 </pre>
             </div>
 
-            <div class="footer">
+            <div class="footer" id="footer">
                 <h1>Connect with me on</h1>
                 <div class="footer-img">
                     <a href="https://vikasvk.netlify.app/"><img src="./websiteW.png"></a>

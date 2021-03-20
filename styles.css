@@ -45,7 +45,7 @@ a {
     top: 1rem;
     cursor: pointer;
     color: #3CA1CD;
-    z-index: 1;
+    z-index: 0;
 }
 
 .copy:hover::after {
@@ -183,7 +183,8 @@ h1 {
 }
 
 .links.active{
-    color: #317fa0;
+    color: #3CA1CD;
+    font-weight: 500;
 }
 
 .links:hover {
@@ -594,6 +595,103 @@ h1 {
     text-align: center;
 }
 
+.card-container {
+    padding: 1rem;
+}
+
+.product-card {
+    display: inline-block;
+    width: 17rem;
+    transition: box-shadow 0.2s;
+    position: relative;
+    padding-bottom: 1rem ;
+}
+
+.product-badge {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 0.8rem;
+    background-color: #DA4167;
+    color: white;
+    padding: 0 0.7rem;
+}
+
+.wishlist-badge {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.747);
+    color:rgb(185, 185, 185);
+    padding: 0.2rem 0.4rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    box-shadow: 0px 0px 15px 0 rgb(223, 223, 223);
+}
+
+.product-card:hover > .wishlist-badge{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s;
+    color: #DA4167;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.product-desc {
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+    color: grey;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.product-price > del {
+    font-size: 0.9rem;
+    color:rgb(145, 145, 145);
+    font-weight: 500;
+}
+
+.product-price > span {
+    font-size: 0.9rem;
+    color:rgb(4, 167, 4);
+    font-weight: 500;
+}
+
+.product-rating {
+    background-color: rgb(2, 150, 2);
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    color: white;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.product-rating > span {
+    color: white;
+    font-size: 12px;
+    margin-left: 0.3rem;
+}
+
+.product-card > p {
+    margin: 0.2rem 0.5rem;
+}
+
+.product-card > img{
+    max-width: 100%;
+}
+
 .responsive-img {
     max-width: 100%;
     height: auto;
@@ -747,6 +845,7 @@ h1 {
     border-radius: 0.5rem;
     box-shadow: 1px 1px 10px 0px rgb(110, 110, 110);
     background-color: white;
+    z-index: 4;
 }
 
 .modal-bg {

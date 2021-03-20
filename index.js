@@ -1,26 +1,9 @@
 var header = document.getElementById("mainlink");
 var btns = header.getElementsByClassName("links");
 
-var modalBtn = document.querySelector('.modal-btn');
-var modalBg = document.querySelector('.modal-bg');
-var modalClose = document.querySelector('.modal-close');
-
-//var copyBtn = document.querySelector('.copy');
 var copyBtn = document.querySelectorAll('.copy');
 
-console.log(copyBtn);
-
-//var code = document.getElementById('code');
 var toast = document.querySelector('.copy-toast');
-
-
-modalBtn.addEventListener('click', function() {
-    modalBg.classList.add('modal-bg-active');
-})
-
-modalClose.addEventListener('click', function() {
-    modalBg.classList.remove('modal-bg-active');
-})
 
 for (var i=0; i<btns.length; i++) {
 
