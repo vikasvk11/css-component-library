@@ -16,19 +16,6 @@ for (var i=0; i<btns.length; i++) {
     });
 }
 
-// function copyText() {
-//     let text = code.innerText;
-//     navigator.clipboard.writeText(text)
-//     .then(() => {
-//             toast.classList.add('copy-toast-visible');
-//             setTimeout(() => {
-//                 toast.classList.remove('copy-toast-visible');
-//             },2500); 
-//     });
-// }
-
-// copyBtn.addEventListener('click', copyText);
-
 function copyText(str) {
     console.log(str);
     let code = document.querySelectorAll(`.${str}`);
