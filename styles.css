@@ -129,7 +129,7 @@ a {
 
 .main-nav-header {
     flex: 2 1;
-    color: #4d6e7c;
+    color: #3CA1CD;
     padding-left: 5rem;
 }
 
@@ -190,6 +190,13 @@ a {
 
 .links:hover {
     color: #317fa0;
+    font-weight: 500;
+}
+
+.links:focus {
+    color: #317fa0;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .avatar-sm {
@@ -1196,7 +1203,6 @@ a {
         flex: 1 1;
         color: #4d6e7c;
         padding-left: 1.8rem;
-
     }
 
     .land-code {
@@ -1227,7 +1233,7 @@ a {
 
     .grid-main-1 {
         position: fixed;
-        display: none;
+        display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
@@ -1236,10 +1242,11 @@ a {
         background-color: #f7f7f7;
         z-index: 2;
         box-shadow: 0px 15px 15px 0px #00000013;
+        visibility: hidden;
     }
 
     .grid-main-1.active {
-        display: flex;
+        visibility: visible;
     }
 
     .grid-main-1 > li {
@@ -1268,6 +1275,7 @@ a {
     .main-nav-header {
         font-size: 1rem;
         padding: 0;
+        text-decoration: none;
     }
 
     .main-nav-header > img {
@@ -1293,6 +1301,86 @@ a {
 
     .badge-avatar-sm, .badge-avatar-md, .badge-avatar-lg {
         margin: 0 0.5rem;
+    }
+
+    .component-headers, .component-sub-headers {
+        margin-left: 1rem;
+    }
+
+    .alert-container {
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+    .badge-icon, .badge-icon-pr {
+        margin: 0 1rem;
+    }
+
+     .btn-primary-outline, .btn-secondary, .btn-secondary-outline, .btn-icon, .btn-link {
+        margin: 1rem 1rem;
+    }
+
+    .horizontal-card {
+        width: 90%;
+    }
+
+    .round-img {
+        margin: 1rem;
+    }
+
+    .spaced-list-container {
+        margin: 0 1rem;
+    }
+
+    .mg-1 {
+        margin: 1rem;
+    }
+
+    .toast {
+        margin: 0 1rem;
+    }
+
+    .grid-container-2 {
+        margin: 0 1rem;
+    }
+
+    .grid-container-3 {
+        gap: 10px;
+        margin: 0 1rem;
+    }
+
+    pre {
+        width: 100%;
+    }
+
+    .code-container {
+        margin-right: 0.5rem;
+    }
+
+    #code {
+        font-size: 12px;
+    }
+
+    .stacked-list-container > li {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .nav-header {
+        font-size: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .nav-list > li {
+        font-size: 0.8rem;
+    }
+
+    .nav-list {
+        flex: 2 1;
+    }
+
+    .modal {
+        width: 90%;
     }
 
 }
