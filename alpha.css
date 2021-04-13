@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    scroll-padding-top: 50px;
 }
 
 html {
@@ -1201,6 +1202,7 @@ a {
 }
 
  @media all and (max-width: 900px) and (min-width: 634px) {
+
     .land-body {
         height: auto;
         overflow: auto;
